@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiteBurst Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="logo">
+      <span>Biteburst</span>
+    </div>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+     ☰
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="overlay">
+      <h1>Experience Fine Dining</h1>
+      <p>Delicious Food crafted with passion</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our special Dishes</h2>
+    <div class="menu-container">
+      <div class="card">
+        <img src="images/pizza.jpg" alt="Pizza">
+        <h3>Italian Pizza</h3>
+        <p>Authentic Wood-Fired Pizza</p>
+        <span>₹399</span>
+      </div>
+      <div class="card">
+        <img src="images/burger.jpg" alt="Burger">
+        <h3>Classic Burger</h3>
+        <p>Grilled Perfection</p>
+        <span>₹249</span>
+      </div>
+      <div class="card">
+        <img src="images/pasta.jpg" alt="pasta">
+        <h3>Creamy Pasta</h3>
+        <p>Rich & Flovorful</p>
+        <span>₹299</span>
+      </div>
+    </div>
+  </section>
+  <section id="reservation">
+    <h2>Book a Table</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Full name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="date" required>
+      <input type="time" required>
+      <input type="number" placeholder="Guests" required>
+      <button type="submit">Reserve Now</button>
+    </form>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><i class="fas fa-map-marker-alt"> Pune, Maharashtra</i></p>
+    <p><i class="fas fa-phone"> +91 9876543210</i></p>
+  </section>
+  <footer>
+    <p>© 2026 BiteBurst Restaurant | Designed & Developed by Priyanka Gupte</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
